@@ -1,0 +1,39 @@
+{
+  "name": "website",
+  "scripts": {
+  },
+  "env": {
+    "HOST": {
+      "required": true
+    },
+    "NAME": {
+      "required": true
+    },
+    "PASSWORD": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "SECRET_KEY": {
+      "required": true
+    },
+    "USER": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
