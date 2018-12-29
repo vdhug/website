@@ -4,23 +4,60 @@
 	About
 {% endblock %}
 
-
+{% block js %}
+	<script src="{% static 'about/js/about.js' %}" type="text/javascript"></script>
+{% endblock %}
 
 {% block body %}
 	<div style=" background-color: #d1abac;">
 		<section class="container">
 			<div class="row ">
 				<div class="col-5">
-					<h1 class="h4 mt-3">Home</h1>
+					<h1 class="h4 mt-3">About</h1>
 
-					<h1 class="welcome-text">Hi, I'm  <span class="my-name">Vitor Hugo</span>.<br> I'm a software developer. </h1>
+					<h1 class="welcome-text"><span class="my-name">Who</span> I'm?</h1>
+					<p>Software developer with experience in web technologies, developmentof loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathonts. </p>
 
+
+					<div id="accordion">
+						<div class="mt-5 panel-strengths">
+							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow px-2 py-2 mr-4 rounded icon-curious" data-name="curious"></span></a>
+							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-quick" data-name="quick"></span></a>
+							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-focus" data-name="focus"></span></a>
+							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-passion" data-name="passion"></span></a>
+						</div>
+
+
+						<div class="mt-3">
+						  <div id="curious" class="collapse show" aria-labelledby="headingCurious" data-parent="#accordion">
+							<h1 class="title-inside mt-3 mb-2">Curiosity</h1>
+							<p>For being passionate about software development I am always curious about new technologies, frameworks and trends in the area.</p>
+						  </div>
+
+						  <div id="quick" class="collapse" aria-labelledby="headingQuick" data-parent="#accordion">
+							  <h1 class="title-inside mt-3 mb-2">Quick Learning Ability</h1>
+							  <p>During college i realized the importance of being a self taught person. Being a software developer is to be in a constant learning, and i am sure that this thought will lead my professional success.</p>
+						  </div>
+
+						  <div id="focus" class="collapse" aria-labelledby="headingFocus" data-parent="#accordion">
+							  <h1 class="title-inside mt-3 mb-2">High End User Focus</h1>
+							  <p>Software is not just about what the users can do, but how easily they can do. That is why i took a time to improve my skills in front-end development, and this results can be seen in my personal projects.</p>
+						 </div>
+
+						 <div id="passion" class="collapse" aria-labelledby="headingPassion" data-parent="#accordion">
+							 <h1 class="title-inside mt-3 mb-2">Passionate</h1>
+							 <p>Build software that will be used for hundreds, thousands or even millions of people is my passion. To see that my work made an impact, in a positive way, is what give me joy.</p>
+						</div>
+
+
+						</div>
+					</div>
 
 				</div>
 
 				<div class="col-1 d-flex flex-column justify-content-between">
-					<a class="my-4 icon-arrow-up" href="#"></a>
-					<a class="my-4 icon-arrow-down" href="#"></a>
+					<a class="my-4 icon-arrow-up" href="{% url 'index' %}"></a>
+					<a class="my-4 icon-arrow-down" href="{% url 'index' %}"></a>
 				</div>
 
 				<div class="col-6 home-bg ">
