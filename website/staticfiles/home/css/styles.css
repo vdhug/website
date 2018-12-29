@@ -16,7 +16,7 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icons/icomoon.eot?3ehso0');
-    src:  url('fonts/icons/icomoon.eot?3ehso0#iefix') format('embedded-opentype'),
+    src:  url('../fonts/icons/icomoon.eot?3ehso0#iefix') format('embedded-opentype'),
     url('../fonts/icons/icomoon.ttf?3ehso0') format('truetype'),
     url('../fonts/icons/icomoon.woff?3ehso0') format('woff'),
     url('../fonts/icons/icomoon.svg?3ehso0#icomoon') format('svg');
