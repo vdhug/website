@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(function () {
 		arrowUp.classList.add("fadeInUp");
-	}, 2500);
+	}, 00);
 
     setTimeout(function () {
 		arrowDown.classList.add("fadeInDown");
-	}, 2500);
+	}, 00);
 
 });

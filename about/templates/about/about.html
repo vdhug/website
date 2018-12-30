@@ -16,17 +16,17 @@
 					<h1 id="title" class="h4 mt-3 animated fadeInDown">About</h1>
 					<div id="about-me" class="animated">
 						<h1 class="welcome-text"><span class="my-name">Who</span> I'm?</h1>
-						<p>Software developer with experience in web technologies, developmentof loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathonts. </p>
+						<p>Software developer with experience in web technologies, developmentof loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons. </p>
 					</div>
 
 
 
 					<div id="accordion" class="animated">
-						<div class="mt-5 panel-strengths">
-							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow px-2 py-2 mr-4 rounded icon-curious" data-name="curious"></span></a>
-							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-quick" data-name="quick"></span></a>
-							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-focus" data-name="focus"></span></a>
-							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow px-2 py-2 mx-4 rounded icon-passion" data-name="passion"></span></a>
+						<div class="mt-xl-5 panel-strengths">
+							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-curious" data-name="curious"></span></a>
+							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-quick" data-name="quick"></span></a>
+							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-focus" data-name="focus"></span></a>
+							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-passion" data-name="passion"></span></a>
 						</div>
 
 
@@ -58,12 +58,58 @@
 				</div>
 
 				<div class="col-1 d-flex flex-column justify-content-between">
-					<a class="my-4 icon-arrow-up" href="{% url 'index' %}"></a>
-					<a class="my-4 icon-arrow-down" href="{% url 'index' %}"></a>
+					<a id="arrow-up" class="my-4 icon-arrow-up animated" href="{% url 'index' %}"></a>
+					<a id="arrow-down" class="my-4 icon-arrow-down animated" href="{% url 'index' %}"></a>
 				</div>
 
-				<div class="col-6 home-bg ">
+				<div class="col-6 " style="height: 100vh;">
+					<div id="profile-picture" class="row animated">
+						<div class="col-12 mt-3 ">
+							<img class="border rounded-circle profile-picture" src="{% static 'about/img/profile-picture.jpg' %}" alt="">
+						</div>
 
+						<div class="col-12 technologies">
+
+							<div class="progress-count animated rounded">
+
+								 <span class="px-2">Python</span><div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">Django</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">C#</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">.NET</span><div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">JavaScript</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">Scrum</span><div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+							</div>
+
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">AWS</span><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							</div>
+							<div class="progress-count animated rounded my-xl-4 my-lg-3">
+								 <span class="px-2">Travis</span><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+					<div class="class">
+
+					</div>
 				</div>
 			</div>
 		</section>
