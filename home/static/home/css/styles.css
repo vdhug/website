@@ -60,6 +60,31 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   content: "\ea3e";
 }
 
+.icon-instagram:before {
+  content: "\e903";
+
+}
+.icon-facebook:before {
+  content: "\e904";
+
+}
+.icon-php:before {
+  content: "\e900";
+
+}
+.icon-css:before {
+  content: "\e901";
+
+}
+.icon-javascript:before {
+  content: "\e902";
+
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+
+
 
 
 .welcome-text::before {
@@ -114,7 +139,7 @@ a:hover {
     background-color: #302e3e;
 }
 
-.strength {
+.strength, .techs {
     border: 4px solid #302e3e;
 }
 .strength:hover, .icon-selected {
