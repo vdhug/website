@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     var logo = document.getElementById("logo-picture");
     var arrowUp = document.getElementById("arrow-up");
     var arrowDown = document.getElementById("arrow-down");
+    var network = document.getElementById("network");
+
+    // Add animations to elements
+    setTimeout(function () {
+		arrowUp.classList.add("fadeInUp");
+	}, 00);
+
+    setTimeout(function () {
+		arrowDown.classList.add("fadeInDown");
+	}, 00);
 
     setTimeout(function () {
 		project_company.classList.add("fadeInLeft");
@@ -17,25 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(function () {
 		logo.classList.add("fadeInDown");
 	}, 1500);
-
-    var i = 0;
-
-    document.querySelectorAll('.progress-count').forEach(function(tech) {
-        debugger
-        setTimeout(function () {
-    		tech.classList.add("fadeInLeft");
-    	}, (i*500)+2200);
-        i++;
-    });
-
+    
     setTimeout(function () {
-		arrowUp.classList.add("fadeInUp");
-	}, 00);
+		network.classList.add("fadeInDown");
+	}, 2000);
 
-    setTimeout(function () {
-		arrowDown.classList.add("fadeInDown");
-	}, 00);
 
+
+
+
+
+    // Track what icon has been selected and changes his style
     document.querySelectorAll('.accordion-toggle').forEach(function(icon) {
 		icon.onclick = function() {
             if (icon.classList.contains('icon-selected')) {
