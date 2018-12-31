@@ -12,14 +12,13 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     color: #302e3e;
 }
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icons/icomoon.eot?oeaoom');
-  src:  url('../fonts/icons/icomoon.eot?oeaoom#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icomoon.ttf?oeaoom') format('truetype'),
-    url('../fonts/icons/icomoon.woff?oeaoom') format('woff'),
-    url('../fonts/icons/icomoon.svg?oeaoom#icomoon') format('svg');
+  src:  url('../fonts/icons/icomoon.eot?fh2v2q');
+  src:  url('../fonts/icons/icomoon.eot?fh2v2q#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?fh2v2q') format('truetype'),
+    url('../fonts/icons/icomoon.woff?fh2v2q') format('woff'),
+    url('../fonts/icons/icomoon.svg?fh2v2q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -60,6 +59,31 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   content: "\ea3e";
 }
 
+.icon-instagram:before {
+  content: "\e903";
+
+}
+.icon-facebook:before {
+  content: "\e904";
+
+}
+.icon-php:before {
+  content: "\e900";
+
+}
+.icon-css:before {
+  content: "\e901";
+
+}
+.icon-javascript:before {
+  content: "\e902";
+
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+
+
 
 
 .welcome-text::before {
@@ -72,7 +96,7 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 }
 
 .welcome-text {
-    margin-top: 130px;
+    margin-top: 20%;
 }
 
 .my-name {
@@ -86,7 +110,35 @@ a:hover {
 
 /* About page */
 
-.strength {
+.profile-picture {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.technologies {
+    margin-top: 3%;
+}
+
+.progress-count {
+    background-color: #806c75;
+    display: flex;
+    height: 1.5rem;
+    overflow: hidden;
+}
+
+.progress-count span {
+    background-color: #a44c8f;
+    font-size: 1.1rem;
+    width: 20%;
+    justify-content: center;
+}
+
+
+.progress-bar {
+    background-color: #302e3e;
+}
+
+.strength, .techs {
     border: 4px solid #302e3e;
 }
 .strength:hover, .icon-selected {
@@ -102,7 +154,7 @@ a:hover {
 }
 
 /* Settings opacity of elements from about page to 0 for the animations */
-#accordion , #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down {
+#accordion , #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down, .progress-count, #profile-picture, #project-company, #logo-picture {
     opacity: 0;
 }
 
@@ -249,4 +301,73 @@ a:hover {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
+}
+
+
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+          animation-name: fadeInUpBig;
 }
