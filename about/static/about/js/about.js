@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var i = 0;
 
     document.querySelectorAll('.progress-count').forEach(function(tech) {
-        debugger
+        
         setTimeout(function () {
     		tech.classList.add("fadeInLeft");
     	}, (i*500)+2200);
