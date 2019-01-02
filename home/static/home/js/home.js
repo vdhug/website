@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    // Adding animations to elements
     var welcome = document.getElementById("welcome-div");
     var home = document.getElementById("home-div");
     var arrowUp = document.getElementById("arrow-up");
