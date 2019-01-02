@@ -207,7 +207,7 @@ a:hover {
 
 
 /* Settings opacity of elements from about page to 0 for the animations */
-#accordion , #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down, .progress-count, #profile-picture, #project-company, #logo-picture, #network {
+#accordion , #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down, .progress-count, #profile-picture, #project-company, #logo-picture, #network, #welcome-div, #contact-div, #contact-form {
     opacity: 0;
 }
 
