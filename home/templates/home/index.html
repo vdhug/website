@@ -1,7 +1,7 @@
 {% extends "home/layout.html" %}
 {% load static %}
 {% block title %}
-	Index
+	Home
 {% endblock %}
 
 {% block js %}
@@ -13,19 +13,20 @@
 	<div style=" background-color: #d1abac;">
 		<section class="container">
 			<div class="row ">
-				<div class="col-5">
-					<h1 class="h4 mt-3 animated fadeInDown">Home</h1>
-					<div id="welcome-div" class="animated">
-						<h1 class="welcome-text">Hi, I'm  <span class="my-name">Vitor Hugo</span>.<br> I'm a software developer.</h1>
+				<div class="col-6">
+					<div class="d-flex justify-content-between">
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Home</h1>
+						<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+							<a title="Home" href="{% url 'index' %}" class=" link link-selected">&bull;</a>
+							<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+							<a title="Projects" href="{% url 'projects' %}" class="link">&bull;</a>
+							<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+						</div>
 					</div>
 
-
-
-				</div>
-
-				<div class="col-1 d-flex flex-column justify-content-between">
-					<a id="arrow-up" class="my-4 icon-arrow-up animated" href="{% url 'contact' %}"></a>
-					<a id="arrow-down" class="my-4 icon-arrow-down animated" href="{% url 'about' %}"></a>
+					<div id="welcome-div" class="animated">
+						<h1 class="welcome-text">Hi, I'm  <span class="highlight">Vitor Hugo</span>.<br> I'm a software developer.</h1>
+					</div>
 				</div>
 
 				<div id="home-div" class="col-6 home-bg animated">

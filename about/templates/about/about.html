@@ -12,8 +12,17 @@
 	<div style=" background-color: #d1abac;">
 		<section class="container">
 			<div class="row ">
-				<div class="col-5">
-					<h1 id="title" class="h4 mt-3 animated fadeInDown">About</h1>
+				<div class="col-6">
+					<div class="d-flex justify-content-between">
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">About</h1>
+						<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+							<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+							<a title="About" href="{% url 'about' %}" class="link link-selected">&bull;</a>
+							<a title="Projects" href="{% url 'projects' %}" class="link">&bull;</a>
+							<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+						</div>
+					</div>
+
 					<div id="about-me" class="animated">
 						<h1 class="welcome-text"><span class="my-name">Who</span> I'm?</h1>
 						<p>Software developer with experience in web technologies, developmentof loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons. </p>
@@ -51,15 +60,8 @@
 							 <p>Build software that will be used for hundreds, thousands or even millions of people is my passion. To see that my work made an impact, in a positive way, is what give me joy.</p>
 						</div>
 
-
 						</div>
 					</div>
-
-				</div>
-
-				<div class="col-1 d-flex flex-column justify-content-between">
-					<a id="arrow-up" class="my-4 icon-arrow-up animated" href="{% url 'index' %}"></a>
-					<a id="arrow-down" class="my-4 icon-arrow-down animated" href="{% url 'projects' %}"></a>
 				</div>
 
 				<div class="col-6 " style="height: 100vh;">

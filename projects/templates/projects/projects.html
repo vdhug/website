@@ -1,7 +1,7 @@
 {% extends "home/layout.html" %}
 {% load static %}
 {% block title %}
-	About
+	Projects
 {% endblock %}
 
 {% block js %}
@@ -17,8 +17,16 @@
 					<!-- Engenharia Vivace Project Beggining -->
 					<div class="carousel-item active">
 						<div class="row ">
-							<div class="col-5">
-								<h1 id="title" class="h4 mt-3 animated fadeInDown">Projects</h1>
+							<div class="col-6">
+								<div class="d-flex justify-content-between">
+									<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
+									<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+										<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+										<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+										<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+										<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+									</div>
+								</div>
 								<div id="project-company" class="animated">
 									<h1 class="welcome-text">Engenharia Vivace</h1>
 									<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
@@ -57,11 +65,7 @@
 								</div>
 								<!-- Finishing of accordion -->
 							</div>
-							<!-- Controllers between pages -->
-							<div class="col-1 d-flex flex-column justify-content-between">
-								<a id="arrow-up" class="my-4 icon-arrow-up animated" href="{% url 'about' %}"></a>
-								<a id="arrow-down" class="my-4 icon-arrow-down animated" href="{% url 'contact' %}"></a>
-							</div>
+
 							<!-- Informations about the projects owner -->
 			                <div class="col-6" style="height: 100vh;">
 			                    <div id="logo-picture" class="row animated">
@@ -84,8 +88,16 @@
 
 
 		<div class="row ">
-			<div class="col-5">
-				<h1 class="h4 mt-3 animated fadeInDown">Projects</h1>
+			<div class="col-6">
+				<div class="d-flex justify-content-between">
+					<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
+					<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+						<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+						<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+						<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+						<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+					</div>
+				</div>
 				<div  class="animated">
 					<h1 class="welcome-text">Kroz</h1>
 					<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
@@ -129,10 +141,7 @@
 
 			</div>
 
-			<div class="col-1 d-flex flex-column justify-content-between">
-				<a class="my-4 icon-arrow-up animated" href="{% url 'about' %}"></a>
-				<a class="my-4 icon-arrow-down animated" href="{% url 'contact' %}"></a>
-			</div>
+
 
 			<div class="col-6" style="height: 100vh;">
 				<div class="row animated">
@@ -167,8 +176,16 @@
 
 
 				<div class="row ">
-					<div class="col-5">
-						<h1 class="h4 mt-3 animated fadeInDown">Projects</h1>
+					<div class="col-6">
+						<div class="d-flex justify-content-between">
+							<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
+							<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+								<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+								<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+								<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+								<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+							</div>
+						</div>
 						<div  class="animated">
 							<h1 class="welcome-text">Kakuna</h1>
 							<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
@@ -212,10 +229,6 @@
 
 					</div>
 
-					<div class="col-1 d-flex flex-column justify-content-between">
-						<a class="my-4 icon-arrow-up animated" href="{% url 'about' %}"></a>
-						<a class="my-4 icon-arrow-down animated" href="{% url 'contact' %}"></a>
-					</div>
 
 					<div class="col-6" style="height: 100vh;">
 						<div class="row animated">
