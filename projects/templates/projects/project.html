@@ -1,0 +1,268 @@
+{% extends "home/layout.html" %}
+{% load static %}
+{% block title %}
+	Projects
+{% endblock %}
+
+{% block js %}
+	<script src="{% static 'projects/js/projects.js' %}" type="text/javascript"></script>
+{% endblock %}
+{% block body %}
+	<div style=" background-color: #d1abac;">
+		<section class="container">
+			<!-- Starting Carousel Container that hold all the projects and the controllers-->
+			<div id="carouselProjects" class="carousel slide" data-ride="carousel">
+				<!-- Starting body of the Carousel  -->
+				<ol class="carousel-indicators">
+					<li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselProjects" data-slide-to="1"></li>
+					<li data-target="#carouselProjects" data-slide-to="2"></li>
+				</ol>
+			 	<div class="carousel-inner">
+					<!-- Engenharia Vivace Project Beggining -->
+					<div class="carousel-item active">
+						<div class="row ">
+							<div class="col-6">
+
+								<div class="d-flex justify-content-between">
+									<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
+									<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+										<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+										<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+										<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+										<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+									</div>
+								</div>
+								<div id="project-company" class="animated">
+									<h1 class="welcome-text">Engenharia Vivace</h1>
+									<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
+								</div>
+								<!-- Controllers of accordion -->
+								<div id="accordion" class="animated">
+									<div class="mt-xl-5 panel-techs">
+										<a id="headingAmazon" href="#" title="AWS" data-toggle="collapse" data-target="#amazon" aria-expanded="true" aria-controls="amazon"><span class="accordion-toggle icon-selected techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-amazon" data-name="amazon"></span></a>
+										<a id="headingJavascript" href="#" title="JavaScript" data-toggle="collapse" data-target="#javascript" aria-expanded="true" aria-controls="javascript"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-javascript" data-name="javascript"></span></a>
+										<a id="headingPhp" href="#" title="PHP" data-toggle="collapse" data-target="#php" aria-expanded="true" aria-controls="php"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-php" data-name="php"></span></a>
+										<a id="headingCss" href="#" title="CSS" data-toggle="collapse" data-target="#css" aria-expanded="true" aria-controls="css"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-css" data-name="css"></span></a>
+									</div>
+
+									<!-- Contents of accordion -->
+									<div class="mt-3">
+									  <div id="amazon" class="collapse show" aria-labelledby="headingAmazon" data-parent="#accordion">
+										<h1 class="title-inside">Hosting</h1>
+										<p>Amazon Web Services was used to host the website because is reliable, fast, secure and has a really fair price. Beyond that AWS offers a really easy way to scale your website.</p>
+									  </div>
+
+									  <div id="javascript" class="collapse" aria-labelledby="headingJavascript" data-parent="#accordion">
+										  <h1 class="title-inside">Animations</h1>
+										  <p>JavaScript was used to manage the animations in the website. The animations was part of a really famous library animate.css, created by <span class="my-name">Daniel Eden</span></p>
+									  </div>
+
+									  <div id="php" class="collapse" aria-labelledby="headingPhp" data-parent="#accordion">
+										  <h1 class="title-inside">Templates</h1>
+										  <p>PHP was used to transform static html pages into dynamic web pages and to allow the administrators of the website add, edit or remove informations through the CMS Wordpress.</p>
+									  </div>
+
+									  <div id="css" class="collapse" aria-labelledby="headingCss" data-parent="#accordion">
+										 <h1 class="title-inside">Style</h1>
+										 <p>CSS was used to style all the website. All the style in the website was produced specific to this project.</p>
+									  </div>
+									</div>
+								</div>
+								<!-- Finishing of accordion -->
+							</div>
+
+							<!-- Informations about the projects owner -->
+			                <div class="col-6" style="height: 100vh;">
+
+			                    <div id="logo-picture" class="row animated">
+			                        <div class="col-12 mt-3">
+			                            <img class="border rounded-circle profile-picture" src="{% static 'projects/img/vivace/logo.jpg' %}" alt="">
+			                        </div>
+
+			                        <div id="network" class="col-12 mt-5 network animated">
+			                            <a href="https://www.facebook.com/VivaceEngenhariaLTDA" target="_blank" title="Facebook"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-facebook"></span></a>
+			                            <a href="https://www.instagram.com/vivacengenharia/" target="_blank" title="Instagram"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-instagram"></span></a>
+			                            <a href="http://www.engenhariavivace.com" target="_blank" title="Website"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-site"></span></a>
+			                        </div>
+			                    </div>
+			                </div>
+						</div>
+					</div>
+					<!-- Engenharia Vivace Project Finishing -->
+				<div class="carousel-item ">
+
+
+
+		<div class="row ">
+			<div class="col-6">
+				<div class="d-flex justify-content-between">
+					<h1 style="align-self: center;" class="h4 mt-3 ">Projects</h1>
+					<div style="align-self: center;" class="h4 mt-3">
+						<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+						<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+						<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+						<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+					</div>
+				</div>
+				<div  class="animated">
+					<h1 class="welcome-text">Kroz</h1>
+					<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
+				</div>
+
+
+
+				<div class="animated">
+					<div class="mt-xl-5 panel-techs">
+						<a id="headingAmazon" href="#" title="AWS" data-toggle="collapse" data-target="#amazon" aria-expanded="true" aria-controls="amazon"><span class="accordion-toggle icon-selected techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-amazon" data-name="amazon"></span></a>
+						<a id="headingJavascript" href="#" title="JavaScript" data-toggle="collapse" data-target="#javascript" aria-expanded="true" aria-controls="javascript"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-javascript" data-name="javascript"></span></a>
+						<a id="headingPhp" href="#" title="PHP" data-toggle="collapse" data-target="#php" aria-expanded="true" aria-controls="php"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-php" data-name="php"></span></a>
+						<a id="headingCss" href="#" title="CSS" data-toggle="collapse" data-target="#css" aria-expanded="true" aria-controls="css"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-css" data-name="css"></span></a>
+					</div>
+
+
+					<div class="mt-3">
+					  <div id="amazon" class="collapse show" aria-labelledby="headingAmazon" data-parent="#accordion">
+						<h1 class="title-inside">Hosting</h1>
+						<p>Amazon Web Services was used to host the website because is reliable, fast, secure and has a really fair price. Beyond that AWS offers a really easy way to scale your website.</p>
+					  </div>
+
+					  <div id="javascript" class="collapse" aria-labelledby="headingJavascript" data-parent="#accordion">
+						  <h1 class="title-inside">Animations</h1>
+						  <p>JavaScript was used to manage the animations in the website. The animations was part of a really famous library animate.css, created by <span class="my-name">Daniel Eden</span></p>
+					  </div>
+
+					  <div id="php" class="collapse" aria-labelledby="headingPhp" data-parent="#accordion">
+						  <h1 class="title-inside">Templates</h1>
+						  <p>PHP was used to transform static html pages into dynamic web pages and to allow the administrators of the website add, edit or remove informations through the CMS Wordpress.</p>
+					 </div>
+
+					 <div id="css" class="collapse" aria-labelledby="headingCss" data-parent="#accordion">
+						 <h1 class="title-inside">Style</h1>
+						 <p>CSS was used to style all the website. All the style in the website was produced specific to this project.</p>
+					</div>
+
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-6" style="height: 100vh;">
+				<div class="row animated">
+					<div class="col-12 mt-3">
+						<img class="border rounded-circle profile-picture" src="{% static 'projects/img/vivace/logo.jpg' %}" alt="">
+					</div>
+
+					<div class="col-12 mt-5 network animated">
+						<a href="https://www.facebook.com/VivaceEngenhariaLTDA" title="Facebook"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-facebook"></span></a>
+						<a href="https://www.instagram.com/vivacengenharia/" title="Instagram"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-instagram"></span></a>
+						<a href="www.engenhariavivace.com" title="Website"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-site"></span></a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+		</div>
+
+
+
+		<!-- OTHER -->
+
+
+
+
+
+					<div class="carousel-item ">
+
+
+
+				<div class="row ">
+					<div class="col-6">
+						<div class="d-flex justify-content-between">
+							<h1 style="align-self: center;" class="h4 mt-3">Projects</h1>
+							<div style="align-self: center;" class="h4 mt-3">
+								<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
+								<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
+								<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
+								<a title="Contact" href="{% url 'contact' %}" class="link">&bull;</a>
+							</div>
+						</div>
+						<div  class="animated">
+							<h1 class="welcome-text">Kakuna</h1>
+							<p>Engenharia Vivace is an Electrical Engineering company, founded in 2015, offers maintenance of electrical, hydraulic and refrigeration systems, elaboration of projects in the different areas of civil and eletrical engineering and products and services for the generation of energy from renewable sources.</p>
+						</div>
+
+
+
+						<div class="animated">
+							<div class="mt-xl-5 panel-techs">
+								<a id="headingAmazon" href="#" title="AWS" data-toggle="collapse" data-target="#amazon" aria-expanded="true" aria-controls="amazon"><span class="accordion-toggle icon-selected techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-amazon" data-name="amazon"></span></a>
+								<a id="headingJavascript" href="#" title="JavaScript" data-toggle="collapse" data-target="#javascript" aria-expanded="true" aria-controls="javascript"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-javascript" data-name="javascript"></span></a>
+								<a id="headingPhp" href="#" title="PHP" data-toggle="collapse" data-target="#php" aria-expanded="true" aria-controls="php"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-php" data-name="php"></span></a>
+								<a id="headingCss" href="#" title="CSS" data-toggle="collapse" data-target="#css" aria-expanded="true" aria-controls="css"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-css" data-name="css"></span></a>
+							</div>
+
+
+							<div class="mt-3">
+							  <div id="amazon" class="collapse show" aria-labelledby="headingAmazon" data-parent="#accordion">
+								<h1 class="title-inside">Hosting</h1>
+								<p>Amazon Web Services was used to host the website because is reliable, fast, secure and has a really fair price. Beyond that AWS offers a really easy way to scale your website.</p>
+							  </div>
+
+							  <div id="javascript" class="collapse" aria-labelledby="headingJavascript" data-parent="#accordion">
+								  <h1 class="title-inside">Animations</h1>
+								  <p>JavaScript was used to manage the animations in the website. The animations was part of a really famous library animate.css, created by <span class="my-name">Daniel Eden</span></p>
+							  </div>
+
+							  <div id="php" class="collapse" aria-labelledby="headingPhp" data-parent="#accordion">
+								  <h1 class="title-inside">Templates</h1>
+								  <p>PHP was used to transform static html pages into dynamic web pages and to allow the administrators of the website add, edit or remove informations through the CMS Wordpress.</p>
+							 </div>
+
+							 <div id="css" class="collapse" aria-labelledby="headingCss" data-parent="#accordion">
+								 <h1 class="title-inside">Style</h1>
+								 <p>CSS was used to style all the website. All the style in the website was produced specific to this project.</p>
+							</div>
+
+
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="col-6" style="height: 100vh;">
+						<div class="row animated">
+							<div class="col-12 mt-3">
+								<img class="border rounded-circle profile-picture" src="{% static 'projects/img/vivace/logo.jpg' %}" alt="">
+							</div>
+
+							<div class="col-12 mt-5 network animated">
+								<a href="https://www.facebook.com/VivaceEngenhariaLTDA" title="Facebook"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-facebook"></span></a>
+								<a href="https://www.instagram.com/vivacengenharia/" title="Instagram"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-instagram"></span></a>
+								<a href="www.engenhariavivace.com" title="Website"><span class="shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-site"></span></a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+				</div>
+		  </div>
+
+		  <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+		</section>
+	</div>
+{% endblock %}
