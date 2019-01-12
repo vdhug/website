@@ -108,6 +108,9 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 .highlight {
     color: #a44c8f;
 }
+.bold {
+    font-weight: 600;
+}
 
 a:hover, .link-selected {
     color: #45139E;
@@ -209,6 +212,10 @@ a:hover, .link-selected {
 }
 
 /* Project page */
+.projects {
+    margin-top: 10px;
+}
+
 
 .project {
     width: 100%;
@@ -227,7 +234,7 @@ a:hover, .link-selected {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  width: 304px;;
+  width: 286px;
   height: 100%;
   top: 50%;
   left: 50%;
