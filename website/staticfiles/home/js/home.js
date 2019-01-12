@@ -1,10 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    // Adding animations to elements
     var welcome = document.getElementById("welcome-div");
     var home = document.getElementById("home-div");
-    var arrowUp = document.getElementById("arrow-up");
-    var arrowDown = document.getElementById("arrow-down");
+    // var arrowUp = document.getElementById("arrow-up");
+    // var arrowDown = document.getElementById("arrow-down");
 
     setTimeout(function () {
 		welcome.classList.add("fadeInLeft");
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		home.classList.add("fadeInDownBig");
 	}, 1500);
 
-    setTimeout(function () {
-		arrowUp.classList.add("fadeInUp");
-	}, 2500);
-
-    setTimeout(function () {
-		arrowDown.classList.add("fadeInDown");
-	}, 2500);
+    // setTimeout(function () {
+	// 	arrowUp.classList.add("fadeInUp");
+	// }, 00);
+    //
+    // setTimeout(function () {
+	// 	arrowDown.classList.add("fadeInDown");
+	// }, 00);
 
 });
