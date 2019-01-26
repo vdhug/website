@@ -12,6 +12,12 @@ body, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     color: #302e3e;
 }
+
+body {
+    min-height: 100vh;
+    background-color: #d1abac;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icons/icomoon.eot?mwab4i');
@@ -274,6 +280,20 @@ a:hover, .link-selected {
     cursor: pointer;
     background-color: #45139E;
     color: #ebdada;
+}
+
+
+/* Modal styles */
+.modal-content {
+    background-color: #D1ABAC;
+}
+
+.modal-dialog .welcome-text {
+    margin-top: 5%;
+}
+
+.modal-dialog {
+    max-width: 50%;
 }
 
 /* Settings opacity of elements from about page to 0 for the animations */
