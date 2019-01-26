@@ -295,9 +295,39 @@ a:hover, .link-selected {
 .modal-dialog {
     max-width: 50%;
 }
+.modal-techs {
+    height: 180px;
+}
 
+.modal-controls .close-modal {
+    float: right;
+    color: #302e3e;
+    font-size: 2.5rem;
+    border: 0px solid #000;
+    background-color: inherit;
+    line-height: 1;
+    opacity: .5;
+}
+.modal-controls .close-modal:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.modal-controls .btn {
+    width: 20%;
+    background-color: #EBDADA;
+    color: #302e3e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    height: 2.5rem;
+}
+
+.modal-controls .btn:hover {
+    background-color: #45139E;
+    color: #ebdada;
+}
 /* Settings opacity of elements from about page to 0 for the animations */
-#accordion , #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down, .progress-count, #profile-picture, #project-company, #logo-picture, #network, #welcome-div, #contact-div, #contact-form {
+.accordion-about, #projects, #about-me, #welcome-div, #home-div, #arrow-up, #arrow-down, .progress-count, #profile-picture, #project-company, #logo-picture, #network, #welcome-div, #contact-div, #contact-form {
     opacity: 0;
 }
 

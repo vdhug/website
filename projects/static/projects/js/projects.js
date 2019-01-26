@@ -1,32 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    var project_company = document.getElementById("project-company");
-    var accordion = document.getElementById("accordion");
-    var logo = document.getElementById("logo-picture");
-    var network = document.getElementById("network");
-
+    var projects = document.getElementById("projects");
 
 
     setTimeout(function () {
-		project_company.classList.add("fadeInLeft");
-	}, 500);
-
-    setTimeout(function () {
-		accordion.classList.add("fadeInLeft");
-	}, 1000);
-    setTimeout(function () {
-		logo.classList.add("fadeInDown");
-	}, 1500);
-
-    setTimeout(function () {
-		network.classList.add("fadeInDown");
-	}, 2000);
-
-
-
-
-
+		projects.classList.add("fadeInLeft");
+	}, 800);
 
     // Track what icon has been selected and changes his style
     document.querySelectorAll('.accordion-toggle').forEach(function(icon) {
