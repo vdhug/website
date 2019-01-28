@@ -1,5 +1,9 @@
 /*Estilo para tablets*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+.welcome-text {
+	font-size: 2rem;
+	margin-top: 5%;
+}
 
 } /* Final do estilo para tablets */
 
@@ -7,7 +11,10 @@
 @media only screen and (max-width: 767px) {
 
 .welcome-text {
-	font-size: 1.9rem;
+	font-size: 2rem;
+	margin-top: 5%;
 }
+
+
 
 } /* Final do estilo para smartphone

@@ -12,10 +12,10 @@
 	<div>
 		<section class="container">
 			<div class="row ">
-				<div class="col-6">
+				<div class="col-lg-6">
 					<div class="d-flex justify-content-between">
 						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">About</h1>
-						<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+						<div style="align-self: center;" class="h4 mt-3 d-none d-lg-flex animated fadeInDown">
 							<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
 							<a title="About" href="{% url 'about' %}" class="link link-selected">&bull;</a>
 							<a title="Projects" href="{% url 'projects' %}" class="link">&bull;</a>
@@ -31,11 +31,11 @@
 
 
 					<div id="accordion" class="animated accordion-about">
-						<div class="mt-xl-5 panel-strengths">
-							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-curious" data-name="curious"></span></a>
-							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-quick" data-name="quick"></span></a>
-							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-focus" data-name="focus"></span></a>
-							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-passion" data-name="passion"></span></a>
+						<div class="mt-xl-5 mt-4 panel-strengths">
+							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow py-xl-2 px-2 py-2 mr-lg-2 rounded icon-curious" data-name="curious"></span></a>
+							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-lg-2 rounded icon-quick" data-name="quick"></span></a>
+							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-lg-2 rounded icon-focus" data-name="focus"></span></a>
+							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-lg-2 rounded icon-passion" data-name="passion"></span></a>
 						</div>
 
 
@@ -64,51 +64,47 @@
 					</div>
 				</div>
 
-				<div class="col-6 ">
+				<div class="col-lg-6 ">
 					<div id="profile-picture" class="row animated">
-						<div class="col-12 mt-3 ">
-							<img class="border rounded-circle profile-picture" src="{% static 'about/img/profile-picture.jpg' %}" alt="">
+						<div class="col-12 mt-3">
+							<img class="border rounded-circle profile-picture mx-auto d-block" src="{% static 'about/img/profile-picture.jpg' %}" alt="">
 						</div>
 
 						<div class="col-12 technologies">
 
 							<div class="progress-count animated rounded">
-
-								 <span class="px-2">Python</span><div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+								 <span class="px-2">Python</span><div class="progress-bar" role="progressbar" style="width: 56%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">Django</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3 ">
+								 <span class="px-2">Django</span><div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
 
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">C#</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">C#</span><div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">.NET</span><div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">.NET</span><div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">JavaScript</span><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">JS</span><div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">Scrum</span><div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">Scrum</span><div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
 							</div>
 
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">AWS</span><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">AWS</span><div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
 							</div>
-							<div class="progress-count animated rounded my-xl-4 my-lg-3">
-								 <span class="px-2">Travis</span><div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							<div class="progress-count animated rounded my-xl-4 my-3">
+								 <span class="px-2">Travis</span><div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
 							</div>
-
-
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
