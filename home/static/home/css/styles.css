@@ -225,11 +225,16 @@ a:hover, .link-selected {
     background-color: #fff;
 }
 
+.project-image {
+    background-size: cover;
+    max-width:100%; height: 280px;
+}
+
 .project-info {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  width: 286px;
+  width: 285px;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -243,8 +248,11 @@ a:hover, .link-selected {
   opacity: 1;
 }
 
-.project:hover .project {
+.project:hover .project,  .project:hover .project-image {
     opacity: 0;
+}
+.project:hover {
+    background-color: #D1ABAC;
 }
 
 .project-info {
