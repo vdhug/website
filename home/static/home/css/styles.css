@@ -224,14 +224,6 @@ a:hover, .link-selected {
     width: 100%;
     background-color: #fff;
 }
-.card-img-top {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
 
 .project-info {
   transition: .5s ease;
@@ -246,13 +238,13 @@ a:hover, .link-selected {
   text-align: center;
 }
 
-.project:hover .card-img-top {
-  opacity: 0;
-  background-color: #ebdada;
-}
 
 .project:hover .project-info {
   opacity: 1;
+}
+
+.project:hover .project {
+    opacity: 0;
 }
 
 .project-info {
