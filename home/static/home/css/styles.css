@@ -67,29 +67,26 @@ body {
 .icon-site:before {
   content: "\e9ca";
 }
-
 .icon-instagram:before {
   content: "\e903";
-
 }
 .icon-facebook:before {
   content: "\e904";
-
 }
 .icon-php:before {
   content: "\e900";
-
 }
 .icon-css:before {
   content: "\e901";
-
 }
 .icon-javascript:before {
   content: "\e902";
-
 }
 .icon-amazon:before {
   content: "\ea87";
+}
+.icon-menu:before {
+  content: "\e9bd";
 }
 
 
@@ -280,6 +277,39 @@ a:hover, .link-selected {
     cursor: pointer;
     background-color: #45139E;
     color: #ebdada;
+}
+
+/* Style navbar */
+.my-navbar, .my-navbar-controllers {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-navbar-controllers {
+    background-color: #302e3e;
+    border-bottom: 3px solid #917980;
+}
+
+.my-navbar {
+    background-color: #592A48;
+}
+.my-navbar ul {
+    padding: .5rem 1rem;
+}
+.nav-link {
+    color: #EBDADA;
+}
+.active .nav-link {
+    color: #CE6659;
+}
+.navbar-toggler span {
+    color: #EBDADA;
+}
+
+.navbar-controllers {
+    border-top: 3px solid #917980;
 }
 
 

@@ -1,6 +1,6 @@
 Titulo-Introducao - 42.666666666666664 com line height de 48
-Titulo secoes - 40
-Titulo dentro de secoes - 24
-Texto dentro das secoes - 16 
-Botao - 21.33
-Menu - 16
+Titulo secoes - 40 - 40 - 33.3
+Titulo dentro de secoes - 24 - 24 - 18.6
+Texto dentro das secoes - 16  - 16 - 10.6
+Botao - 21.33 - 17.3 - 17.3
+Menu - 16 - 16 -16
