@@ -15,7 +15,7 @@
 				<div class="col-6">
 					<div class="d-flex justify-content-between">
 						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
-						<div style="align-self: center;" class="h4 mt-3 animated fadeInDown">
+						<div style="align-self: center;" class="h4 mt-3 d-none d-lg-flex animated fadeInDown">
 							<a title="Home" href="{% url 'index' %}" class=" link">&bull;</a>
 							<a title="About" href="{% url 'about' %}" class="link">&bull;</a>
 							<a title="Projects" href="{% url 'projects' %}" class="link link-selected">&bull;</a>
@@ -26,8 +26,8 @@
 			</div>
 
 			<div id="projects" class="row projects animated">
-				<div class="project col-3 p-0">
-					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/vivace.jpg' %}) no-repeat center;">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
+					<div class="project-image" style="max-width:100%; height: 280px;  background: url({% static 'projects/img/vivace.jpg' %}) no-repeat center;">
 					</div>
 
 					<!-- Info about project that stays hide until user hover image -->
@@ -40,7 +40,7 @@
 
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/kroz.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -50,7 +50,7 @@
 				  	</div>
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/kakuna.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -60,7 +60,7 @@
 				  	</div>
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/rest.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -69,7 +69,7 @@
 						<button class="rounded" type="button" name="button">Know More</button>
 				  	</div>
 				</div>
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/digital-century.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -79,7 +79,7 @@
 				  	</div>
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/flex.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -89,7 +89,7 @@
 				  	</div>
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/caravan.svg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -99,7 +99,7 @@
 				  	</div>
 				</div>
 
-				<div class="project col-3 p-0">
+				<div class="project col-lg-3 col-sm-12 col-md-6 p-0">
 					<div class="project-image" style="width:100%; height: 280px;     background: url({% static 'projects/img/integrait.jpg' %}) no-repeat center;">
 					</div>
 					<div class="project-info">
@@ -126,11 +126,11 @@
 									</div>
 								<div class="modal-techs">
 								<div id="accordion">
-									<div class="mt-xl-5 panel-techs">
-										<a id="headingAmazon" href="#" title="AWS" data-toggle="collapse" data-target="#amazon" aria-expanded="true" aria-controls="amazon"><span class="accordion-toggle icon-selected techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mr-lg-2 rounded icon-amazon" data-name="amazon"></span></a>
-										<a id="headingJavascript" href="#" title="JavaScript" data-toggle="collapse" data-target="#javascript" aria-expanded="true" aria-controls="javascript"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-javascript" data-name="javascript"></span></a>
-										<a id="headingPhp" href="#" title="PHP" data-toggle="collapse" data-target="#php" aria-expanded="true" aria-controls="php"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-php" data-name="php"></span></a>
-										<a id="headingCss" href="#" title="CSS" data-toggle="collapse" data-target="#css" aria-expanded="true" aria-controls="css"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-lg-1 py-lg-1 mx-lg-2 rounded icon-css" data-name="css"></span></a>
+									<div class="mt-xl-5 mt-4 panel-techs">
+										<a id="headingAmazon" href="#" title="AWS" data-toggle="collapse" data-target="#amazon" aria-expanded="true" aria-controls="amazon"><span class="accordion-toggle icon-selected techs shadow px-xl-2 py-xl-2  px-1 py-1 mr-lg-2 rounded icon-amazon" data-name="amazon"></span></a>
+										<a id="headingJavascript" href="#" title="JavaScript" data-toggle="collapse" data-target="#javascript" aria-expanded="true" aria-controls="javascript"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-1 py-1 mx-lg-2 rounded icon-javascript" data-name="javascript"></span></a>
+										<a id="headingPhp" href="#" title="PHP" data-toggle="collapse" data-target="#php" aria-expanded="true" aria-controls="php"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-1 py-1 mx-lg-2 rounded icon-php" data-name="php"></span></a>
+										<a id="headingCss" href="#" title="CSS" data-toggle="collapse" data-target="#css" aria-expanded="true" aria-controls="css"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-1 py-1 mx-lg-2 rounded icon-css" data-name="css"></span></a>
 									</div>
 
 									<!-- Contents of accordion -->
