@@ -20,7 +20,10 @@
 /*Estilo para smartphone*/
 @media only screen and (max-width: 767px) {
 
-
+.my-navbar {
+	background-color: #592A48;
+	border-bottom: none;
+}
 
 
 .welcome-text {
