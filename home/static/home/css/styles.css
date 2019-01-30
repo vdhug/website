@@ -218,6 +218,7 @@ a:hover, .link-selected, a:active, .link-selected {
 /* Project page */
 .projects {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 

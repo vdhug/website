@@ -14,12 +14,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		home.classList.add("fadeInDownBig");
 	}, 1500);
 
-    // setTimeout(function () {
-	// 	arrowUp.classList.add("fadeInUp");
-	// }, 00);
-    //
-    // setTimeout(function () {
-	// 	arrowDown.classList.add("fadeInDown");
-	// }, 00);
-
 });
