@@ -20,6 +20,12 @@
 /*Estilo para smartphone*/
 @media only screen and (max-width: 767px) {
 
+body {
+	padding-bottom: 4%;
+}
+
+
+
 .my-navbar {
 	background-color: #592A48;
 	border-bottom: none;
