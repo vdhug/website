@@ -62,6 +62,10 @@ body {
     border: 2px solid #e6d1d1;
 }
 
+.progress-count span {
+	font-size: 1rem;
+}
+
 
 
 } /* Final do estilo para smartphone
