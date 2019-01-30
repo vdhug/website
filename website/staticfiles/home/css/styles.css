@@ -20,11 +20,11 @@ body {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icons/icomoon.eot?mwab4i');
-  src:  url('../fonts/icons/icomoon.eot?mwab4i#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icomoon.ttf?mwab4i') format('truetype'),
-    url('../fonts/icons/icomoon.woff?mwab4i') format('woff'),
-    url('../fonts/icons/icomoon.svg?mwab4i#icomoon') format('svg');
+  src:  url('../fonts/icons/icomoon.eot?2gneoq');
+  src:  url('../fonts/icons/icomoon.eot?2gneoq#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?2gneoq') format('truetype'),
+    url('../fonts/icons/icomoon.woff?2gneoq') format('woff'),
+    url('../fonts/icons/icomoon.svg?2gneoq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .welcome-text {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .highlight {
@@ -115,7 +115,7 @@ body {
     font-weight: 600;
 }
 
-a:hover, .link-selected {
+a:hover, .link-selected, a:active, .link-selected {
     color: #45139E;
     text-decoration: none;
 }
@@ -153,7 +153,7 @@ a:hover, .link-selected {
 .strength, .techs {
     border: 4px solid #302e3e;
 }
-.strength:hover, .techs:hover, .icon-selected, .network a span:hover {
+.strength:hover, .techs:hover, .icon-selected, .network a span:hover, .strength:active, .techs:active, .icon-selected, .network a span:active {
     color: #45139E;
     border-color: #45139E;
     text-decoration: none;
@@ -208,7 +208,7 @@ a:hover, .link-selected {
     height: 2.5rem;
 }
 
-.contact-form button:hover {
+.contact-form button:hover, .contact-form button:active {
     background-color: #45139E;
     color: #ebdada;
     transition: all .5s;
@@ -222,22 +222,20 @@ a:hover, .link-selected {
 
 .project {
     width: 100%;
-    background-color: #fff;
+    background-color: #D1ABAC;
 }
-.card-img-top {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+
+.project-image {
+    background-size: cover;
+    max-width:100%;
+    height: 320px;
 }
 
 .project-info {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  width: 286px;
+  max-width:100%;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -246,14 +244,15 @@ a:hover, .link-selected {
   text-align: center;
 }
 
-.project:hover .card-img-top {
-  opacity: 0;
-  background-color: #ebdada;
+.project:hover .project-image {
+    opacity: 0
+}
+.project:hover .project-info {
+    opacity: 1;
 }
 
-.project:hover .project-info {
-  opacity: 1;
-}
+
+
 
 .project-info {
     padding-top: 15%;
@@ -273,12 +272,16 @@ a:hover, .link-selected {
     text-transform: uppercase;
 }
 
-.project-info button:hover {
+.project-info button:hover, .project-info button:active {
     cursor: pointer;
     background-color: #45139E;
     color: #ebdada;
 }
-
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 /* Style navbar */
 .my-navbar, .my-navbar-controllers {
     position: relative;
@@ -287,14 +290,23 @@ a:hover, .link-selected {
     justify-content: space-between;
 }
 
-.my-navbar-controllers {
+.nav-item {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 15px 10px;
+}
+
+.nav-item a:hover {
+    color: #CE6659;
+    transition: all ease .5s;
+}
+
+
+.my-navbar-controllers, .my-navbar  {
     background-color: #302e3e;
     border-bottom: 3px solid #917980;
 }
 
-.my-navbar {
-    background-color: #592A48;
-}
 .my-navbar ul {
     padding: .5rem 1rem;
 }
@@ -338,13 +350,13 @@ a:hover, .link-selected {
     line-height: 1;
     opacity: .5;
 }
-.modal-controls .close-modal:hover {
+.modal-controls .close-modal:hover, .modal-controls .close-modal:active  {
     cursor: pointer;
     opacity: .8;
 }
 
 .modal-controls .btn {
-    width: 20%;
+    width: 120px;
     background-color: #EBDADA;
     color: #302e3e;
     font-size: 1.2rem;
@@ -352,7 +364,7 @@ a:hover, .link-selected {
     height: 2.5rem;
 }
 
-.modal-controls .btn:hover {
+.modal-controls .btn:hover, .modal-controls .btn:active {
     background-color: #45139E;
     color: #ebdada;
 }
