@@ -234,7 +234,7 @@ a:hover, .link-selected, a:active, .link-selected {
 }
 
 .project-info {
-  transition: .5s ease;
+  transition: .7s ease;
   opacity: 0;
   position: absolute;
   max-width:100%;
@@ -247,10 +247,12 @@ a:hover, .link-selected, a:active, .link-selected {
 }
 
 .project:hover .project-image {
-    opacity: 0
+    opacity: 0;
+    transition: all ease .7s;
 }
 .project:hover .project-info {
     opacity: 1;
+    transition: all ease .7s;
 }
 
 
