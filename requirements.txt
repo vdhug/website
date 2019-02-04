@@ -3,3 +3,5 @@ psycopg2
 django_heroku
 gunicorn
 Pillow
+boto3
+django-storages
