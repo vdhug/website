@@ -129,3 +129,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 from website.aws.conf import *
+
+django_heroku.settings(locals())
