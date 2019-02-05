@@ -1,4 +1,3 @@
-import datetime
 import os
 
 AWS_USERNAME = os.environ.get('AWS_USERNAME')
