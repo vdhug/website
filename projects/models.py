@@ -14,7 +14,8 @@ class Project(models.Model):
 
 class Tech(models.Model):
 	name_icon = models.CharField(max_length=64)
-	title = models.CharField(max_length=64)
+	title = models.CharField(max_length=50)
+	special_class = models.CharField(max_length=64, blank=True, default='', null=True)
 	description = models.TextField()
 	project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='techs')
 

@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var projects = document.getElementById("projects");
 
-
     setTimeout(function () {
 		projects.classList.add("fadeInLeft");
 	}, 800);

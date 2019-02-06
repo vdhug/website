@@ -54,14 +54,14 @@
 								<div id="accordion{{project.name|getName}}">
 									<div class="mt-xl-5 mt-4 panel-techs">
 										{% for tech in project.techs.all %}
-											<a id="heading{{tech.name_icon}}" href="#" title="{{tech.name_icon}}" data-toggle="collapse" data-target="#{{tech.name_icon}}" aria-expanded="true" aria-controls="{{tech.name_icon}}"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-2 py-2 mr-lg-2 mr-sm-1 rounded icon-{{tech.name_icon}}" data-name="amazon"></span></a>
+											<a id="heading{{tech.name_icon}}" href="#" title="{{tech.name_icon}}" data-toggle="collapse" data-target="#{{tech.name_icon}}" aria-expanded="true" aria-controls="{{tech.name_icon}}"><span class="accordion-toggle techs shadow px-xl-2 py-xl-2  px-2 py-2 mr-lg-2 mr-sm-1 rounded icon-{{tech.name_icon}} {{tech.special_class|getFirstString}}" data-name="amazon"></span></a>
 										{% endfor %}
 									</div>
 
 									<!-- Contents of accordion -->
 									<div class="mt-3">
 										{% for tech in project.techs.all %}
-											<div id="{{tech.name_icon}}" class="collapse" aria-labelledby="heading{{tech.name_icon}}" data-parent="#accordion{{project.name|getName}}">
+											<div id="{{tech.name_icon}}" class="collapse {{tech.special_class|getSecondString}}" aria-labelledby="heading{{tech.name_icon}}" data-parent="#accordion{{project.name|getName}}">
 												<h1 class="title-inside">{{tech.title}}</h1>
 												<p>{{tech.description}}</p>
 											</div>
@@ -70,7 +70,7 @@
 								</div>
 								</div>
 								<div class="modal-controls mb-4">
-									<a href="www.engenhariavivace.com" class="btn">VIEW SITE</a>
+									<a href="{{project.link_for_project_site}}" target="_blank" class="btn">VIEW SITE</a>
 
 									<button class=" close-modal" type="button" name="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								</div>
