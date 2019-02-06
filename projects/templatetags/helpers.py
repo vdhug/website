@@ -8,5 +8,21 @@ def getName(word):
 
 
 @register.filter
+def getFirstString(string):
+	if string:
+		return string.split()[0]
+	else:
+		return ""
+
+
+@register.filter
+def getSecondString(string):
+	if string:
+		return string.split()[1]
+	else:
+		return ""
+
+
+@register.filter
 def getLen(techs):
 	return len(techs)

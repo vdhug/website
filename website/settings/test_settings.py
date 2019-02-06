@@ -23,7 +23,7 @@ SECRET_KEY = '1hpp#&&*%7nnzhjisb*j4pjlse707-f2%6mfn_2!r&31d5+mpw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -35,10 +35,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
-    'about',
-    'projects',
-    'contact',
+    'home.apps.HomeConfig',
+    'about.apps.AboutConfig',
+    'projects.apps.ProjectsConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,11 +74,13 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
