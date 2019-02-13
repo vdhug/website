@@ -1,5 +1,7 @@
 {% extends "home/layout.html" %}
 {% load static %}
+{% load i18n %}
+
 {% block title %}
 	Home
 {% endblock %}
@@ -15,11 +17,12 @@
 			<div class="row ">
 				<div class="col-lg-6 mt-5 pt-4">
 					<div class="d-flex justify-content-between">
-						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Home</h1>
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">{% trans "Home" %}</h1>
 					</div>
 
 					<div id="welcome-div" class="animated">
 						<h1 class="welcome-text">Hi, I'm  <span class="highlight">Vitor Hugo</span>.<br> I'm a software engineer.</h1>
+
 					</div>
 				</div>
 
