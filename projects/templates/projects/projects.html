@@ -1,5 +1,6 @@
 {% extends "home/layout.html" %}
 {% load static %}
+{% load i18n %}
 {% load helpers %}
 {% block title %}
 	Projects
@@ -15,7 +16,7 @@
 			<div class="row">
 				<div class="col-12 col-lg-6  mt-5 pt-4">
 					<div class="d-flex justify-content-between">
-						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Projects</h1>
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">{% trans "Projects" %}</h1>
 					</div>
 				</div>
 			</div>

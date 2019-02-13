@@ -5,3 +5,4 @@ gunicorn
 Pillow
 boto3
 django-storages
+django-modeltranslation==0.13-beta1
