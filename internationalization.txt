@@ -1,0 +1,2 @@
+python manage.py makemessages -l es --settings=website.settings.test_settings
+python manage.py compilemessages -l es --settings=website.settings.test_settings
