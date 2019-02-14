@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 20:02+0000\n"
+"POT-Creation-Date: 2019-02-14 20:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: about/templates/about/about.html:18 home/templates/home/layout.html:38
+#: about/templates/about/about.html:5 about/templates/about/about.html:18
+#: home/templates/home/layout.html:38
 msgid "About"
 msgstr "Sobre"
 
@@ -31,8 +32,33 @@ msgid "I'm"
 msgstr "sou eu"
 
 #: about/templates/about/about.html:23
-msgid """Software developer with experience in web technologies, development of loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons."""
-msgstr """Engenheiro de software com experiência em tecnologias web, desenvolvimento de programas de lealdade, websites e aplicações android. Apaixonado por algoritmos e inteligência artificial para resolução de problemas. Participante regular de hackathon e maratonas de programação."""
+msgid ""
+"Software developer with experience in web technologies, development of "
+"loyalty programs, websites and android mobile applications. Passionate about "
+"algorithms and artificial intelligence for problem solving. Regular "
+"participant in hackathon and programming marathons."
+msgstr ""
+"Engenheiro de software com experiência em tecnologias web, desenvolvimento "
+"de programas de lealdade, websites e aplicações android. Apaixonado por "
+"algoritmos e inteligência artificial para resolução de problemas. "
+"Participante regular de hackathon e maratonas de programação."
+
+#: contact/templates/contact/contact.html:5
+#: contact/templates/contact/contact.html:19 home/templates/home/layout.html:44
+msgid "Contact"
+msgstr "Contato"
+
+#: contact/templates/contact/contact.html:24
+msgid "Contact me."
+msgstr "Contate-me"
+
+#: contact/templates/contact/contact.html:25
+msgid "Have a question or wants to hire me? Feel free to contact me."
+msgstr "Tem alguma pergunta ou deseja me contratar? Sinta-se a vontade para me contatar."
+
+#: contact/templates/contact/contact.html:32
+msgid "Submit"
+msgstr "Enviar"
 
 #: home/templates/home/index.html:20
 msgid "Home"
@@ -47,13 +73,10 @@ msgid "I'm a software engineer."
 msgstr "Sou um engenheiro de software."
 
 #: home/templates/home/layout.html:41
+#: projects/templates/projects/projects.html:6
 #: projects/templates/projects/projects.html:19
 msgid "Projects"
 msgstr "Projetos"
-
-#: home/templates/home/layout.html:44
-msgid "Contact"
-msgstr "Contato"
 
 #: website/settings/settings.py:120 website/settings/test_settings.py:112
 msgid "English"

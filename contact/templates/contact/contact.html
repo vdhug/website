@@ -1,7 +1,8 @@
 {% extends "home/layout.html" %}
+{% load i18n %}
 {% load static %}
 {% block title %}
-	Contact
+	{% trans "Contact" %}
 {% endblock %}
 
 {% block js %}
@@ -15,24 +16,22 @@
 			<div class="row ">
 				<div class="col-lg-6 col-12 pt-4">
 					<div class="d-flex justify-content-between pt-5">
-						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">Contact</h1>
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">{% trans "Contact" %}</h1>
 					</div>
 
 
 					<div id="welcome-div" class="animated">
-						<h1 class="welcome-text">Contact me.</h1>
-						<p>Have a question or wants to hire me? Feel free to contact me.</p>
+						<h1 class="welcome-text">{% trans "Contact me." %}</h1>
+						<p>{% trans "Have a question or wants to hire me? Feel free to contact me." %}</p>
 					</div>
 
 					<div id="contact-form" class="contact-form animated">
 						<input class="rounded shadow" type="text" name="name" value="" placeholder="Name">
 						<input class="rounded shadow" type="email" name="email" value="" placeholder="Email">
 						<textarea class="rounded shadow" name="message" rows="8" cols="51" placeholder="Message"></textarea>
-						<button class="btn" type="button" name="button">Submit</button>
+						<button class="btn" type="button" name="button">{% trans "Submit" %}</button>
 					</div>
 				</div>
-
-
 
 				<div id="contact-div" class="col-6 animated d-none d-lg-block">
 					<div class="contact-bg">
