@@ -1,4 +1,5 @@
 {% extends "home/layout.html" %}
+{% load i18n %}
 {% load static %}
 {% block title %}
 	About
@@ -14,12 +15,12 @@
 			<div class="row pt-4">
 				<div class="col-lg-6 pt-5 mb-lg-3">
 					<div class="d-flex justify-content-between">
-						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">About</h1>
+						<h1 style="align-self: center;" class="h4 mt-3 animated fadeInDown">{% trans "About" %}</h1>
 					</div>
 
 					<div id="about-me" class="animated">
-						<h1 class="welcome-text"><span class="highlight">Who</span> I'm?</h1>
-						<p>Software developer with experience in web technologies, developmentof loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons. </p>
+						<h1 class="welcome-text"><span class="highlight">{% trans "Who" %}</span> {% trans "I'm" %}?</h1>
+						<p>{% trans "Software developer with experience in web technologies, development of loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons." %}</p>
 					</div>
 
 
@@ -50,7 +51,7 @@
 						 </div>
 
 						 <div id="passion" class="collapse" aria-labelledby="headingPassion" data-parent="#accordion">
-							 <h1 class="title-inside ">Passionate</h1>
+							 <h1 class="title-inside">Passionate</h1>
 							 <p>Build software that will be used for hundreds, thousands or even millions of people is my passion. To see that my work made an impact, in a positive way, is what give me joy.</p>
 						</div>
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 18:25+0000\n"
+"POT-Creation-Date: 2019-02-14 19:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: about/templates/about/about.html:17 home/templates/home/layout.html:38
+msgid "About"
+msgstr "Sobre"
+
+#: about/templates/about/about.html:21
+msgid "Who"
+msgstr "Quien"
+
+#: about/templates/about/about.html:21
+msgid "I'm"
+msgstr "soy yo"
+
+#: about/templates/about/about.html:22
+msgid """Software developer with experience in web technologies, development of loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons."""
+msgstr """Desarrollador de software con experiencia en tecnologías web, desarrollo de programas de fidelización, sitios web y aplicaciones móviles android. Apasionado por os algoritmos y la inteligencia artificial para la resolución de problemas. Participante habitual en maratones de programación y hackathons."""
 
 #: home/templates/home/index.html:20
 msgid "Home"
@@ -29,10 +45,6 @@ msgstr "Hola, soy "
 #: home/templates/home/index.html:24
 msgid "I'm a software engineer."
 msgstr "Soy un ingeniero de software."
-
-#: home/templates/home/layout.html:38
-msgid "About"
-msgstr "Sobre"
 
 #: home/templates/home/layout.html:41
 #: projects/templates/projects/projects.html:19
