@@ -6,9 +6,7 @@
     "HOST": {
       "required": true
     },
-    "INHERIT_THIS_CONFIG_VAR": {
-      "required": true
-    },
+    "INHERIT_THIS_CONFIG_VAR": "staging",
     "DONT_INHERIT_THIS_CONFIG_VAR": "production",
     "NAME": {
       "required": true
