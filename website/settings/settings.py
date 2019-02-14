@@ -137,3 +137,7 @@ USE_TZ = True
 django_heroku.settings(locals())
 
 from website.aws.conf import *
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]

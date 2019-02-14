@@ -10,14 +10,10 @@ AWS_QUERYSTRING_AUTH = True
 
 DEFAULT_FILE_STORAGE = 'website.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'website.aws.utils.StaticRootS3BotoStorage'
-LOCALEFILES_STORAGE = 'website.aws.utils.LocaleRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'vdhug-website'
 S3DIRECT_REGION = 'us-east-1'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
-LOCALE_PATHS = [
-    '//%s.s3.amazonaws.com/locale/' % AWS_STORAGE_BUCKET_NAME,
-]
 
 MEDIA_ROOT = MEDIA_URL
 STATIC_URL = S3_URL + 'static/'
