@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 23:48+0000\n"
+"POT-Creation-Date: 2019-02-14 18:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,20 +20,37 @@ msgstr ""
 
 #: home/templates/home/index.html:20
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
+#: home/templates/home/index.html:24
+msgid "Hi, I'm "
+msgstr "Olá, eu sou "
+
+#: home/templates/home/index.html:24
+msgid "I'm a software engineer."
+msgstr "Eu sou um engenheiro de software."
+
+#: home/templates/home/layout.html:38
+msgid "About"
+msgstr "Sobre"
+
+#: home/templates/home/layout.html:41
 #: projects/templates/projects/projects.html:19
 msgid "Projects"
 msgstr "Projetos"
 
-#: website/settings/test_settings.py:113
+#: home/templates/home/layout.html:44
+msgid "Contact"
+msgstr "Contato"
+
+#: website/settings/settings.py:120 website/settings/test_settings.py:112
 msgid "English"
 msgstr ""
 
-#: website/settings/test_settings.py:114
+#: website/settings/settings.py:121 website/settings/test_settings.py:113
 msgid "Portuguese"
 msgstr ""
 
-#: website/settings/test_settings.py:115
+#: website/settings/settings.py:122 website/settings/test_settings.py:114
 msgid "Spanish"
 msgstr ""

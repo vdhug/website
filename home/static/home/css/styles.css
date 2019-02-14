@@ -31,6 +31,35 @@ body {
   font-style: normal;
 }
 
+.flag {
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    background: url('https://s3.amazonaws.com/vdhug-app1/flags/flags.png') no-repeat;
+}
+
+.languages a:first {
+    margin-left: 50px;
+}
+
+.flag.flag-br {
+    background-position: -32px 0;
+}
+
+.flag.flag-es {
+    background-position: 0 -32px;
+}
+
+.flag.flag-us {
+    background-position: -32px -32px;
+}
+
+
+
+
+
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
