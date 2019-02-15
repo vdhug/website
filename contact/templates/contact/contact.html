@@ -36,10 +36,10 @@
 						<form action="send_message" method="post">
 							{% csrf_token %}
 
-							<input type="text" name="r_name" value="" style="height: 0px; width:0px; padding: 0px; margin: 0px !important; border: 0px solid red;">
+							<input type="text" name="r_name" value="" style="display: none; height: 0px; width:0px; padding: 0px; margin: 0px !important; border: 0px solid red;">
 							<input class="rounded shadow" type="text" name="name" value="" placeholder="Name">
 							<input class="rounded shadow" type="email" name="email" value="" placeholder="Email">
-							<input type="text" name="r_email" value="" style="height: 0px; width:0px; padding: 0px; margin: 0px !important;  border: 0px solid red;">
+							<input type="text" name="r_email" value="" style="display: none; height: 0px; width:0px; padding: 0px; margin: 0px !important;  border: 0px solid red;">
 							<textarea class="rounded shadow" name="message" rows="8" cols="51" placeholder="Message"></textarea>
 							{% if erro %}
 								<h3 class="erro-message">{{erro}}</h3>
