@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 20:20+0000\n"
+"POT-Creation-Date: 2019-02-15 17:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: about/templates/about/about.html:5 about/templates/about/about.html:18
+#: about/templates/about/about.html:6 about/templates/about/about.html:19
 #: home/templates/home/layout.html:38
 msgid "About"
 msgstr "Sobre"
 
-#: about/templates/about/about.html:22
+#: about/templates/about/about.html:23
 msgid "Who"
 msgstr "Quem"
 
-#: about/templates/about/about.html:22
+#: about/templates/about/about.html:23
 msgid "I'm"
 msgstr "sou eu"
 
-#: about/templates/about/about.html:23
+#: about/templates/about/about.html:24
 msgid ""
 "Software developer with experience in web technologies, development of "
 "loyalty programs, websites and android mobile applications. Passionate about "
@@ -54,7 +54,9 @@ msgstr "Contate-me"
 
 #: contact/templates/contact/contact.html:25
 msgid "Have a question or wants to hire me? Feel free to contact me."
-msgstr "Tem alguma pergunta ou deseja me contratar? Sinta-se a vontade para me contatar."
+msgstr ""
+"Tem alguma pergunta ou deseja me contratar? Sinta-se a vontade para me "
+"contatar."
 
 #: contact/templates/contact/contact.html:32
 msgid "Submit"
@@ -74,18 +76,29 @@ msgstr "Sou um engenheiro de software."
 
 #: home/templates/home/layout.html:41
 #: projects/templates/projects/projects.html:6
-#: projects/templates/projects/projects.html:19
+#: projects/templates/projects/projects.html:18
 msgid "Projects"
 msgstr "Projetos"
 
+#: projects/templates/projects/projects.html:34
+msgid "Know More"
+msgstr "Saiba Mais"
+
+#: projects/templates/projects/projects.html:73
+msgid "VIEW SITE"
+msgstr "VER SITE"
+
 #: website/settings/settings.py:120 website/settings/test_settings.py:112
+#: website/settings/travis_settings.py:110
 msgid "English"
 msgstr ""
 
 #: website/settings/settings.py:121 website/settings/test_settings.py:113
+#: website/settings/travis_settings.py:111
 msgid "Portuguese"
 msgstr ""
 
 #: website/settings/settings.py:122 website/settings/test_settings.py:114
+#: website/settings/travis_settings.py:112
 msgid "Spanish"
 msgstr ""
