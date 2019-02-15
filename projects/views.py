@@ -8,6 +8,5 @@ def projects(request):
         "projects": Project.objects.all()
     }
 
-	p = Project.objects.all()
 	#pdb.set_trace()
 	return render(request, "projects/projects.html", context)

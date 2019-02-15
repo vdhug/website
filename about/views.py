@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from .models import Strength
 
 # Create your views here.
 def about(request):
-	return render(request, "about/about.html")
+	context = {
+        "strengths": Strength.objects.all()
+    }
+
+	return render(request, "about/about.html", context)
