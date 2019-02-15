@@ -1,5 +1,6 @@
 {% extends "home/layout.html" %}
 {% load i18n %}
+{% load helpers %}
 {% load static %}
 {% block title %}
 	{% trans "About" %}
@@ -23,38 +24,20 @@
 						<p>{% trans "Software developer with experience in web technologies, development of loyalty programs, websites and android mobile applications. Passionate about algorithms and artificial intelligence for problem solving. Regular participant in hackathon and programming marathons." %}</p>
 					</div>
 
-
-
 					<div id="accordion" class="animated accordion-about">
 						<div class="mt-xl-5 mt-4 panel-strengths">
-							<a id="headingCurious" href="#" title="Curiosity" data-toggle="collapse" data-target="#curious" aria-expanded="true" aria-controls="curious"><span class="accordion-toggle icon-selected strength shadow py-xl-2 px-2 py-2 mr-lg-2 rounded icon-curious" data-name="curious"></span></a>
-							<a id="headingQuick" href="#" title="Quick Learning Ability" data-toggle="collapse" data-target="#quick" aria-expanded="true" aria-controls="quick"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-md-2 mx-1 rounded icon-quick" data-name="quick"></span></a>
-							<a id="headingFocus" href="#" title="High End User Focus" data-toggle="collapse" data-target="#focus" aria-expanded="true" aria-controls="focus"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-md-2 mx-1 rounded icon-focus" data-name="focus"></span></a>
-							<a id="headingPassion" href="#" title="Passionate" data-toggle="collapse" data-target="#passion" aria-expanded="true" aria-controls="passion"><span class="accordion-toggle strength shadow py-xl-2 px-2 py-2 mx-md-2 mx-1 rounded icon-passion" data-name="passion"></span></a>
+						{% for strength in strengths %}
+							<a id="heading{{strength.name_icon}}" href="#" title="{{strength.title}}" data-toggle="collapse" data-target="#{{strength.name_icon}}" aria-expanded="true" aria-controls="{{strength.name_icon}}"><span class="accordion-toggle {{strength.special_class|getFirstString}} strength shadow py-xl-2 px-2 py-2 mr-lg-3 rounded icon-{{strength.name_icon}}" data-name="{{strength.name_icon}}"></span></a>
+						{% endfor %}
 						</div>
-
 
 						<div class="mt-3">
-						  <div id="curious" class="collapse show" aria-labelledby="headingCurious" data-parent="#accordion">
-							<h1 class="title-inside ">Curiosity</h1>
-							<p>For being passionate about software development I am always curious about new technologies, frameworks and trends in the area.</p>
-						  </div>
-
-						  <div id="quick" class="collapse" aria-labelledby="headingQuick" data-parent="#accordion">
-							  <h1 class="title-inside ">Quick Learning Ability</h1>
-							  <p>During college i realized the importance of being a self taught person. Being a software developer is to be in a constant learning, and i am sure that this thought will lead my professional success.</p>
-						  </div>
-
-						  <div id="focus" class="collapse" aria-labelledby="headingFocus" data-parent="#accordion">
-							  <h1 class="title-inside ">High End User Focus</h1>
-							  <p>Software is not just about what the users can do, but how easily they can do. That is why i took a time to improve my skills in front-end development, and this results can be seen in my personal projects.</p>
-						 </div>
-
-						 <div id="passion" class="collapse" aria-labelledby="headingPassion" data-parent="#accordion">
-							 <h1 class="title-inside">Passionate</h1>
-							 <p>Build software that will be used for hundreds, thousands or even millions of people is my passion. To see that my work made an impact, in a positive way, is what give me joy.</p>
-						</div>
-
+						{% for strength in strengths %}
+						  	<div id="{{strength.name_icon}}" class="collapse {{strength.special_class|getSecondString}}" aria-labelledby="heading{{strength.name_icon}}" data-parent="#accordion">
+								<h1 class="title-inside">{{strength.title}}</h1>
+								<p>{{strength.description}}</p>
+						  	</div>
+						{% endfor %}
 						</div>
 					</div>
 				</div>
