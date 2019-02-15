@@ -202,6 +202,23 @@ a:hover, .link-selected, a:active, .link-selected {
 }
 
 /* Contact page */
+.erro-message {
+    color: #dc3545;
+    font-size: 1.25rem;
+}
+
+
+.contact-response {
+    margin: 20% 0;
+}
+.contacts a {
+    display: block;
+    color: #45139E;
+}
+.contacts a:hover {
+    color: #CE6659;
+    transition: all ease .3s;
+}
 
 .contact-bg {
     width: 100%;
@@ -210,7 +227,7 @@ a:hover, .link-selected, a:active, .link-selected {
     background-size: cover;
 }
 
-.contact-form input{
+.contact-form input {
     width: 100%;
     height: 2.25rem;
     margin-bottom: 10px;

@@ -20,17 +20,34 @@
 					</div>
 
 
-					<div id="welcome-div" class="animated">
+					<div id="welcome-div" class="animated contacts">
 						<h1 class="welcome-text">{% trans "Contact me." %}</h1>
+						<a href="mailto:silvalimavitorhugo@gmail.com" target="_blank">silvalimavitorhugo@gmail.com</a>
+						<a href="https://api.whatsapp.com/send?phone=5568999376721" target="_blank">+55 (68) 99937-6721</a>
 						<p>{% trans "Have a question or wants to hire me? Feel free to contact me." %}</p>
 					</div>
-
-					<div id="contact-form" class="contact-form animated">
-						<input class="rounded shadow" type="text" name="name" value="" placeholder="Name">
-						<input class="rounded shadow" type="email" name="email" value="" placeholder="Email">
-						<textarea class="rounded shadow" name="message" rows="8" cols="51" placeholder="Message"></textarea>
-						<button class="btn" type="button" name="button">{% trans "Submit" %}</button>
+					{% if message %}
+					<div id="contact-form" class="animated contact-response">
+						<h3>{{message}}</h3>
 					</div>
+					{% else %}
+					<div id="contact-form" class="contact-form animated">
+
+						<form action="send_message" method="post">
+							{% csrf_token %}
+
+							<input type="text" name="r_name" value="" style="height: 0px; width:0px; padding: 0px; margin: 0px !important; border: 0px solid red;">
+							<input class="rounded shadow" type="text" name="name" value="" placeholder="Name">
+							<input class="rounded shadow" type="email" name="email" value="" placeholder="Email">
+							<input type="text" name="r_email" value="" style="height: 0px; width:0px; padding: 0px; margin: 0px !important;  border: 0px solid red;">
+							<textarea class="rounded shadow" name="message" rows="8" cols="51" placeholder="Message"></textarea>
+							{% if erro %}
+								<h3 class="erro-message">{{erro}}</h3>
+							{% endif %}
+							<button class="btn" type="submit" name="button">{% trans "Submit" %}</button>
+						</form>
+					</div>
+					{% endif %}
 				</div>
 
 				<div id="contact-div" class="col-6 animated d-none d-lg-block">
