@@ -31,7 +31,7 @@
 					<div class="project-info col-lg-4 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-md-6">
 				    	<h1>{{project.name}}</h1>
 						<p>{{project.description_company}}</p>
-						<button class="rounded" type="button" name="button" data-toggle="modal" data-target="#{{project.name|getName}}Modal">Know More</button>
+						<button class="rounded" type="button" name="button" data-toggle="modal" data-target="#{{project.name|getName}}Modal">{% trans "Know More" %}</button>
 				  	</div>
 				</div>
 				{% endfor %}
@@ -70,7 +70,7 @@
 								</div>
 								</div>
 								<div class="modal-controls mb-4">
-									<a href="{{project.link_for_project_site}}" target="_blank" class="btn">VIEW SITE</a>
+									<a href="{{project.link_for_project_site}}" target="_blank" class="btn">{% trans "VIEW SITE" %}</a>
 
 									<button class=" close-modal" type="button" name="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								</div>
