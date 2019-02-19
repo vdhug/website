@@ -18,11 +18,3 @@ def change_language(request):
 	request.session[translation.LANGUAGE_SESSION_KEY] = user_language
 
 	return JsonResponse({"success": True})
-
-
-# Set language to English.
-def portuguese(request):
-	user_language = 'pt'
-	translation.activate(user_language)
-	request.session[translation.LANGUAGE_SESSION_KEY] = user_language
-	return HttpResponseRedirect(reverse("index"))
