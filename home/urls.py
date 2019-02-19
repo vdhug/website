@@ -4,7 +4,6 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("english", views.english, name="english"),
-    path("spanish", views.spanish, name="spanish"),
+    path("change_language", views.change_language, name="change_language"),
     path("portuguese", views.portuguese, name="portuguese")
 ]

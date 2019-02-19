@@ -1,27 +1,23 @@
 from django.shortcuts import render
 from django.utils import translation
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
+
+import pdb
 
 # Create your views here.
 def index(request):
 	return render(request, "home/index.html")
 
-
-# Set language to English.
-def english(request):
-	user_language = 'en'
+# Change language.
+@csrf_exempt
+def change_language(request):
+	user_language = request.POST["language"]
 	translation.activate(user_language)
 	request.session[translation.LANGUAGE_SESSION_KEY] = user_language
-	return HttpResponseRedirect(reverse("index"))
 
-
-# Set language to Spanish.
-def spanish(request):
-	user_language = 'es'
-	translation.activate(user_language)
-	request.session[translation.LANGUAGE_SESSION_KEY] = user_language
-	return HttpResponseRedirect(reverse("index"))
+	return JsonResponse({"success": True})
 
 
 # Set language to English.
