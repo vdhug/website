@@ -63,7 +63,11 @@
 										{% for tech in project.techs.all %}
 											<div id="{{tech.name_icon}}" class="collapse {{tech.special_class|getSecondString}}" aria-labelledby="heading{{tech.name_icon}}" data-parent="#accordion{{project.name|getName}}">
 												<h1 class="title-inside">{{tech.title}}</h1>
-												<p>{{tech.description}}</p>
+												<p>
+													{% autoescape off %}
+													    {{tech.description}}
+													{% endautoescape %}
+													</p>
 											</div>
 										{% endfor %}
 									</div>
