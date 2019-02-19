@@ -76,107 +76,91 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.modal-techs p a {
+    color: #a44c8f;
+}
+
+.modal-techs p a:hover {
+    color: #CE6659;
+}
 
 .icon-bootstrap:before {
   content: "\e905";
-  color: #563d7c;
 }
 .icon-gmail:before {
   content: "\e906";
-  color: #d14836;
 }
 .icon-github:before {
   content: "\e907";
 }
 .icon-npm:before {
   content: "\e908";
-  color: #cb3837;
 }
 .icon-angular:before {
   content: "\e909";
-  color: #dd0031;
 }
 .icon-instagram:before {
   content: "\e903";
-  color: #e4405f;
 }
 .icon-python:before {
   content: "\e90a";
-  color: #3776ab;
 }
 .icon-heroku:before {
   content: "\e90b";
-  color: #430098;
 }
 .icon-docker:before {
   content: "\e90c";
-  color: #1488c6;
 }
 .icon-riseup:before {
   content: "\e90d";
-  color: #5e9ee3;
 }
 .icon-telegram:before {
   content: "\e90e";
-  color: #2ca5e0;
 }
 .icon-html5:before {
   content: "\e90f";
-  color: #e34f26;
 }
 .icon-dev-dot-to:before {
   content: "\e910";
 }
 .icon-facebook:before {
   content: "\e904";
-  color: #3b5998;
 }
 .icon-whatsapp:before {
   content: "\e911";
-  color: #25d366;
 }
 .icon-php:before {
   content: "\e900";
-  color: #777bb4;
 }
 .icon-stripe:before {
   content: "\e912";
-  color: #008cdd;
 }
 .icon-mail-dot-ru:before {
   content: "\e913";
-  color: #168de2;
 }
 .icon-keycdn:before {
   content: "\e914";
-  color: #3686be;
 }
 .icon-linkedin:before {
   content: "\e915";
-  color: #0077b5;
 }
 .icon-css3:before {
   content: "\e916";
-  color: #1572b6;
 }
 .icon-django:before {
   content: "\e917";
 }
 .icon-skype:before {
   content: "\e918";
-  color: #00aff0;
 }
 .icon-dot-net:before {
   content: "\e919";
-  color: #5c2d91;
 }
 .icon-css:before {
   content: "\e901";
-  color: #f43059;
 }
 .icon-javascript:before {
   content: "\e902";
-  color: #f7df1e;
 }
 .icon-database:before {
   content: "\e964";
